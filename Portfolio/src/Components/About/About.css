@@ -1,0 +1,133 @@
+/* Container for about section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 100px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Title styling */
+.about-title {
+    text-align: center;
+}
+
+.about-title h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section wrapper */
+.about-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Left column (image) */
+.about-left img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column (text) */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 600px;
+}
+
+/* Paragraphs */
+.about-para {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Skills section */
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-skill {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-skill:hover {
+    transform: translateY(-5px);
+}
+
+.about-skill p {
+    min-width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.about-skill hr {
+    flex-grow: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(264deg, #DF8908, #B415FF);
+    border: none;
+}
+
+/* Education section */
+.about-educations {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-education:hover {
+    transform: translateY(-5px);
+}
+
+.about-education h1 {
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908, #B415FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-education p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #555;
+}

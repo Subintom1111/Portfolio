@@ -1,0 +1,116 @@
+/* Container for services section */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 100px;
+    background-color: #f8f9fa;
+}
+
+/* Title styling */
+.services-title {
+    text-align: center;
+}
+
+.services-title h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-title img{
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+
+}
+
+/* Services container with grid layout */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+/* Individual service item */
+.services-format {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.services-format:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Service title */
+.services-format h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Service subtitle with gradient text */
+.services-format h2 {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #df8908, #b415ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Service description */
+.services-format p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Read more link */
+.services-readmore {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: #b415ff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.services-readmore:hover {
+    color: #df8908;
+}
+
+.services-readmore p {
+    color: #010101;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.services-readmore img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s;
+}
+
+.services-readmore:hover img {
+    transform: translateX(5px);
+}
